@@ -108,4 +108,5 @@ Licensed under the [MIT License](LICENSE).
 
 ## 🏷️ Tags
 
-`#RANA` `#AI` `#IITMRP` `#EmotionRecognition` `#DeepLearning` `#RealTimeAI` `#FER2013`
+`#RANA` `#AI`  `#EmotionRecognition` `#DeepLearning` `#RealTimeAI` `#FER2013`
+
