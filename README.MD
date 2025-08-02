@@ -1,7 +1,7 @@
 
 # 🤖 RANA: Recursive Adaptive Neural Agent
 
-**RANA** (Recursive Adaptive Neural Agent) is an intelligent multimodal AI system developed to classify and interpret human facial emotions in real time. Designed as part of a project under the **IIT Madras Research Park (IITMRP)**, RANA fuses powerful deep learning architectures with adaptive learning techniques for robust emotion recognition.
+**RANA** (Recursive Adaptive Neural Agent) is an intelligent multimodal AI system developed to classify and interpret human facial emotions in real time. RANA fuses powerful deep learning architectures with adaptive learning techniques for robust emotion recognition.
 
 ---
 
@@ -109,4 +109,5 @@ Licensed under the [MIT License](LICENSE).
 ## 🏷️ Tags
 
 `#RANA` `#AI`  `#EmotionRecognition` `#DeepLearning` `#RealTimeAI` `#FER2013`
+
 
