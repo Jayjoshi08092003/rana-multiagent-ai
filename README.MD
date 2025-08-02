@@ -4,7 +4,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/Jayjoshi08092003/REAL_TIME_EMOTION_DETECTION?style=social)
 ![License](https://img.shields.io/github/license/Jayjoshi08092003/REAL_TIME_EMOTION_DETECTION)
 
-This project showcases a real-time **emotion recognition system** developed as part of the **IIT Madras Research Park (IITMRP)** initiative. The system leverages **CNN architectures (ResNeXt-50, MiniXception)** and face detection with **YOLOv5**, all integrated within a modular AI agent called **RANA (Recursive Adaptive Neural Agent)**.
+This project showcases a real-time **emotion recognition system**. The system leverages **CNN architectures (ResNeXt-50, MiniXception)** and face detection with **YOLOv5**, all integrated within a modular AI agent called **RANA (Recursive Adaptive Neural Agent)**.
 
 ---
 
@@ -156,5 +156,6 @@ If this repo helps your research or work, please consider citing or giving a ⭐
 📧 [jayjoshi08092003@gmail.com](mailto:jayjoshi08092003@gmail.com)
 🔗 [LinkedIn](https://www.linkedin.com/in/jayjoshi08092003/)
 🔗 [GitHub](https://github.com/Jayjoshi08092003)
+
 
 
