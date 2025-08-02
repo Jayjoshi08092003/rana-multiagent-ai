@@ -1,9 +1,3 @@
-Here’s a complete and professional **`README.md`** for your GitHub repository: **Real-Time Emotion Detection with RANA**
-You can copy this directly into your repo root as `README.md`.
-
----
-
-```markdown
 # 🎭 Real-Time Emotion Detection using RANA (Recursive Adaptive Neural Agent)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Jayjoshi08092003/REAL_TIME_EMOTION_DETECTION)
@@ -163,20 +157,4 @@ If this repo helps your research or work, please consider citing or giving a ⭐
 🔗 [LinkedIn](https://www.linkedin.com/in/jayjoshi08092003/)
 🔗 [GitHub](https://github.com/Jayjoshi08092003)
 
----
 
-## 📜 License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
-
-```
-
----
-
-Let me know if you’d like:
-- A `requirements.txt` auto-generated from your virtual environment
-- YOLOv5 integration script included
-- A `train_mini_x.py` separately for lightweight training
-
-Ready to push?
-```
