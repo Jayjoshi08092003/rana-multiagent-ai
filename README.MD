@@ -1,35 +1,28 @@
-# 🎭 Real-Time Emotion Detection using RANA (Recursive Adaptive Neural Agent)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Jayjoshi08092003/REAL_TIME_EMOTION_DETECTION)
-![GitHub stars](https://img.shields.io/github/stars/Jayjoshi08092003/REAL_TIME_EMOTION_DETECTION?style=social)
-![License](https://img.shields.io/github/license/Jayjoshi08092003/REAL_TIME_EMOTION_DETECTION)
+# 🤖 RANA: Recursive Adaptive Neural Agent
 
-This project showcases a real-time **emotion recognition system**. The system leverages **CNN architectures (ResNeXt-50, MiniXception)** and face detection with **YOLOv5**, all integrated within a modular AI agent called **RANA (Recursive Adaptive Neural Agent)**.
+**RANA** (Recursive Adaptive Neural Agent) is an intelligent multimodal AI system developed to classify and interpret human facial emotions in real time. Designed as part of a project under the **IIT Madras Research Park (IITMRP)**, RANA fuses powerful deep learning architectures with adaptive learning techniques for robust emotion recognition.
 
 ---
 
-## 🧠 About RANA
+## 🚀 Overview
 
-**RANA** is designed as an adaptive emotional intelligence agent. It:
+RANA combines:
+- Convolutional Neural Networks (CNNs) like **ResNeXt-50** and **MiniXception**
+- A facial emotion dataset (**FER-2013**)
+- Real-time webcam integration
+- YOLOv5 for efficient face detection
+- Custom adaptive learning logic
 
-- Detects and classifies emotions from webcam video feed in real-time.
-- Uses CNNs trained on the **FER-2013** dataset.
-- Integrates **YOLOv5** for high-speed and accurate face detection.
-- Supports real-time inference and dynamic routing for future multimodal systems.
-
----
-
-## 🚀 Features
-
-- Real-time facial emotion detection via webcam.
-- Model training using **MiniXception** and **ResNeXt-50**.
-- Supports CPU & GPU (CUDA).
-- Webcam fallback compatibility (DSHOW, MSMF, V4L2).
-- Live annotations using OpenCV.
+This allows RANA to perform:
+- 🎯 Emotion classification with 7 key emotions
+- 🖼️ Face detection and cropping
+- 🔁 Self-improvement via adaptive learning loops
+- 📦 Future scalability to multimodal contexts (e.g., text + vision)
 
 ---
 
-## 🧪 Emotions Recognized
+## 🔍 Emotion Classes
 
 - Angry 😠  
 - Disgust 🤢  
@@ -37,125 +30,82 @@ This project showcases a real-time **emotion recognition system**. The system le
 - Happy 😄  
 - Neutral 😐  
 - Sad 😢  
-- Surprise 😲
+- Surprise 😲  
 
 ---
 
-## 📁 Folder Structure
+## 🛠️ Core Components
 
-```
+### 📦 CNN Backbone  
+- Initially trained using **ResNeXt-50**
+- Deployed in real-time with **MiniXception** for speed and efficiency
 
-REAL\_TIME\_EMOTION\_DETECTION/
-├── train\_model.py               # Train model on FER-2013 dataset
-├── predict\_realtime.py         # Real-time webcam prediction script
-├── model.py                    # MiniXception / ResNeXt model builder
-├── utils.py                    # Accuracy, evaluation helpers
-├── best\_model\_mini\_x.pth       # Trained model weights
-├── FER-2013/                   # Dataset folder (train/test/val)
-├── requirements.txt            # Required Python packages
-└── README.md                   # This file
+### 🎯 Training  
+- Dataset: FER-2013 (grayscale, 48x48 images)
+- Data Augmentation: Horizontal flips, normalization
+- Loss Function: CrossEntropyLoss  
+- Optimizer: Adam  
 
-````
+### 📷 Real-Time Detection  
+- Face detection via **YOLOv5**
+- Emotion prediction from webcam streams
+- Deployment-ready via OpenCV
 
----
-
-## 🧑‍💻 How to Run Locally
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Jayjoshi08092003/REAL_TIME_EMOTION_DETECTION.git
-cd REAL_TIME_EMOTION_DETECTION
-````
-
-### 2. Create Virtual Environment (optional but recommended)
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Train the Model (optional - model file already included)
-
-```bash
-python train_model.py
-```
-
-### 5. Run Real-Time Emotion Detection
-
-```bash
-python predict_realtime.py
-```
-
-> ⚠️ Make sure your webcam is connected and permissions are allowed.
+### 🧠 Adaptive Learning Loop  
+- Dynamically adjusts learning rate based on validation loss
+- Tracks best model using checkpointing
+- Can be extended for online learning or reinforcement learning
 
 ---
 
-## 🔍 Dataset
+## 📁 Repository Structure
 
-* **FER-2013**: Facial Expression Recognition 2013
-* Public dataset with 7 labeled emotions
-* Training: \~29k images | Size: 48x48 grayscale
-* You can download it from [Kaggle FER-2013](https://www.kaggle.com/datasets/msambare/fer2013)
-
----
-
-## 📦 Requirements
-
-* Python 3.8+
-* PyTorch
-* torchvision
-* OpenCV
-* PIL
-* NumPy
-
-Install with:
-
-```bash
-pip install -r requirements.txt
-```
+\`\`\`
+RANA/
+├── model.py                  # Model definition (MiniXception/ResNeXt)
+├── train_model.py            # Emotion classifier training script
+├── realtime_emotion_detect.py # Real-time webcam inference
+├── datasets/                 # FER-2013 data (or path to it)
+├── best_model.pth            # Trained model checkpoint
+├── README.md                 # Project overview (this file)
+\`\`\`
 
 ---
 
-## 🏗️ Model Architecture
+## 💡 Applications
 
-* **MiniXception** for real-time light inference.
-* Optional **ResNeXt-50** for high-accuracy offline training.
-* Custom CNN wrappers for transfer learning.
-
----
-
-## 📽️ Sample Output
-
-<img src="assets/sample_output.jpg" width="600" alt="Sample Output Frame" />
+- Human-computer interaction  
+- Affective computing  
+- Virtual assistants and robots  
+- Education technology (edtech) feedback systems  
+- Health monitoring tools
 
 ---
 
-## 📚 Citation
+## 🧩 Future Roadmap
 
-If this repo helps your research or work, please consider citing or giving a ⭐.
-
----
-
-## 🤝 Acknowledgments
-
-* [FER-2013 Dataset](https://www.kaggle.com/datasets/msambare/fer2013)
-* [YOLOv5](https://github.com/ultralytics/yolov5)
-* [MiniXception](https://arxiv.org/abs/1710.07557)
+- 🧠 Integrate text + audio for full multimodal emotional AI  
+- 🌍 Add multilingual support  
+- ⚙️ Export as REST API or ONNX for mobile deployment  
+- 📚 Fine-tune with real-world emotion datasets
 
 ---
 
 ## 📬 Contact
 
-**Jay Joshi**
-📧 [jayjoshi08092003@gmail.com](mailto:jayjoshi08092003@gmail.com)
-🔗 [LinkedIn](https://www.linkedin.com/in/jayjoshi08092003/)
+**👨‍💻 Developer:** Jay Joshi  
+📧 Email: jayjoshi08092003@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/jayjoshi08092003)  
 🔗 [GitHub](https://github.com/Jayjoshi08092003)
 
+---
 
+## 📄 License
 
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 🏷️ Tags
+
+`#RANA` `#AI` `#IITMRP` `#EmotionRecognition` `#DeepLearning` `#RealTimeAI` `#FER2013`
